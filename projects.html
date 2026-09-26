@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aaron — Projects</title>
+<style>
+  :root{
+    --paper:#F7F5F0; --ink:#1C2321; --line:#D8D3C8; --accent:#3E6259; --muted:#6B6A63;
+    padding-top: env(safe-area-inset-top,0px); padding-bottom: env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){ --paper:#15181A; --ink:#EDEAE2; --line:#33372F; --accent:#7FB5A6; --muted:#9A988E; }
+  }
+  :root[data-theme="dark"]{ --paper:#15181A; --ink:#EDEAE2; --line:#33372F; --accent:#7FB5A6; --muted:#9A988E; }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--paper); color:var(--ink); font-family:Georgia,"Iowan Old Style","Palatino Linotype",serif; line-height:1.6;}
+  .wrap{max-width:640px; margin:0 auto; padding:48px 24px 96px;}
+  .topnav{display:flex; gap:22px; font-family:-apple-system,"Segoe UI",sans-serif; font-size:14px; margin-bottom:56px; flex-wrap:wrap;}
+  .topnav a{color:var(--muted); text-decoration:none; padding-bottom:4px; border-bottom:2px solid transparent;}
+  .topnav a.active{color:var(--ink); border-bottom-color:var(--accent);}
+  .topnav a:hover{color:var(--ink);}
+  h1{font-size:30px; margin:0 0 40px; font-weight:600;}
+  section{margin-top:40px; padding-top:32px; border-top:1px solid var(--line);}
+  section:first-of-type{margin-top:0; padding-top:0; border-top:none;}
+  section h2{font-size:21px; margin:0 0 6px;}
+  .role{font-family:-apple-system,"Segoe UI",sans-serif; font-size:13px; color:var(--muted); margin-bottom:16px;}
+  p{margin:0 0 14px; max-width:60ch;}
+  .stack{font-family:-apple-system,"Segoe UI",sans-serif; font-size:13px; color:var(--muted); margin-top:12px;}
+  .video-slot{margin-top:18px; border:1px solid var(--line); border-radius:2px; padding:32px 20px; text-align:center; color:var(--muted); font-family:-apple-system,"Segoe UI",sans-serif; font-size:13px;}
+  a{color:var(--accent);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="topnav">
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>Projects</h1>
+
+  <section>
+    <h2>Pharmacy Voice AI Device</h2>
+    <div class="role">Hardware + software, built solo</div>
+    <p>Pharmacy cleanroom staff need quick answers — dosing guidelines, BUD tables, procedures — but their hands and eyes are occupied, and phones aren't allowed. I built a pocket-sized device that answers spoken questions instantly, running entirely on hardware I control.</p>
+    <p>Press and hold a button, ask a question, get a spoken answer back within seconds. Under the hood: Whisper for speech-to-text, Claude for reasoning, a local RAG pipeline over the pharmacy's own reference documents, and a voice-locked PIN system for security. It's in active use at Stoneview's compounding cleanroom today.</p>
+    <p class="stack">Raspberry Pi · Whisper · Claude · Ollama + Qdrant · TypeScript/Node.js</p>
+    <div class="video-slot">[ Add a short demo video or photo of the device here ]</div>
+  </section>
+
+  <section>
+    <h2>Dental AI Scribe</h2>
+    <div class="role">Concept, in customer discovery</div>
+    <p>An AI scribe for dental practices — reducing the documentation burden that pulls providers away from patients. I'm validating the concept directly with an orthodontics practice before building further, to make sure the product matches a real workflow rather than an assumed one.</p>
+  </section>
+
+  <section>
+    <h2>PrintPilot</h2>
+    <div class="role">Full-stack, built solo</div>
+    <p>An AI-assisted web-to-print ordering platform — upload a design, get pricing, place an order, no back-and-forth with a print shop required. Built the full stack: image upload and design flow, an AI agent pipeline, and a pricing engine.</p>
+    <p class="stack">FastAPI · LangGraph · React</p>
+  </section>
+
+  <section>
+    <h2>Listing Tracker</h2>
+    <div class="role">Automation, built solo</div>
+    <p>An automated scraper that tracks pharmacy and business-for-sale listings across cities, running on a schedule and writing results straight to a spreadsheet — no manual checking required.</p>
+  </section>
+
+  <section>
+    <h2>EMS Swing Trainer</h2>
+    <div class="role">Concept</div>
+    <p>A wearable EMS device that fires small, timed muscle stimulation pulses synced to a sport swing (e.g. a tennis forehand) to teach beginners what correct muscle engagement should feel like, in real time.</p>
+  </section>
+</div>
+</body>
+</html>
