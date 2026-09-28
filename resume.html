@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Aaron — Resume</title>
+<title>Aarav — Resume</title>
 <style>
   :root{
     --paper:#F7F5F0; --ink:#1C2321; --line:#D8D3C8; --accent:#3E6259; --muted:#6B6A63;
@@ -27,11 +27,15 @@
   section{margin-top:36px; padding-top:28px; border-top:1px solid var(--line);}
   section:first-of-type{margin-top:0; padding-top:0; border-top:none;}
   section h2{font-family:-apple-system,"Segoe UI",sans-serif; font-size:13px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin:0 0 16px;}
-  .item{margin-bottom:16px;}
+  .item{margin-bottom:18px;}
+  .item:last-child{margin-bottom:0;}
   .item-head{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;}
   .item-title{font-weight:600;}
-  .item-meta{font-family:-apple-system,"Segoe UI",sans-serif; font-size:13px; color:var(--muted);}
+  .item-org{font-style:italic;}
+  .item-meta{font-family:-apple-system,"Segoe UI",sans-serif; font-size:13px; color:var(--muted); white-space:nowrap;}
   p{margin:4px 0 0; max-width:60ch;}
+  ul{margin:6px 0 0; padding-left:18px;}
+  li{margin-bottom:2px;}
   .pills{display:flex; gap:8px; flex-wrap:wrap;}
   .pills span{font-family:-apple-system,"Segoe UI",sans-serif; font-size:12px; border:1px solid var(--line); padding:4px 10px; border-radius:2px; color:var(--muted);}
   @media print{ .topnav, .print{display:none;} }
@@ -47,61 +51,18 @@
   </nav>
 
   <div class="rhead">
-    <h1>Aaron</h1>
+    <h1>Aarav Sakhareliya</h1>
     <a href="#" class="print" onclick="window.print(); return false;">Print / Save PDF</a>
   </div>
-  <div class="contactline">Eleanor Roosevelt High School, Eastvale, CA · [phone, optional] · aaravsakhareliya@gmail.com</div>
+  <div class="contactline">Eastvale, CA · (951) 416-7558 · aaravsakhareliya@gmail.com</div>
 
   <section>
     <h2>Education</h2>
     <div class="item">
       <div class="item-head">
         <div class="item-title">Eleanor Roosevelt High School</div>
-        <div class="item-meta">Eastvale, CA · Class of [2027 / 2028]</div>
+        <div class="item-meta">Expected Graduation: June 2028</div>
       </div>
-      <p>GPA: 4.4 · Pursuing pre-med and business</p>
+      <p>11th Grade (Junior) · GPA: 4.4 / 4.0</p>
     </div>
   </section>
-
-  <section>
-    <h2>Projects</h2>
-    <div class="item">
-      <div class="item-head"><div class="item-title">Pharmacy Voice AI Device</div><div class="item-meta">Solo build</div></div>
-      <p>Hands-free voice AI assistant (Raspberry Pi, Whisper, Claude, local RAG) built for a pharmacy cleanroom; in active daily use.</p>
-    </div>
-    <div class="item">
-      <div class="item-head"><div class="item-title">PrintPilot</div><div class="item-meta">Solo build</div></div>
-      <p>Full-stack AI-assisted web-to-print ordering platform (FastAPI, LangGraph, React) with a working pricing engine.</p>
-    </div>
-    <div class="item">
-      <div class="item-head"><div class="item-title">Dental AI Scribe</div><div class="item-meta">In progress</div></div>
-      <p>AI scribe concept for dental practices, currently in customer discovery with a real orthodontics practice.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Activities & Leadership</h2>
-    <div class="item"><div class="item-title">Student Class Council</div><p>Member</p></div>
-    <div class="item"><div class="item-title">FBLA (Future Business Leaders of America)</div><p>Placed 4th in Entrepreneurship</p></div>
-    <div class="item"><div class="item-title">JV Tennis</div><p>Player</p></div>
-    <div class="item"><div class="item-title">HSAFP Chapter</div><p>Applied to start a chapter at Eleanor Roosevelt High School</p></div>
-    <div class="item"><div class="item-title">Volunteer, Sri Swaminarayan Temple</div><p></p></div>
-    <div class="item"><div class="item-title">Clinical Shadowing</div><p>Shadowed at Dr. Mathur's clinic</p></div>
-  </section>
-
-  <section>
-    <h2>Certifications</h2>
-    <div class="pills">
-      <span>IC3 Digital Literacy</span>
-      <span>Microsoft Excel</span>
-      <span>Generative AI Foundations</span>
-    </div>
-  </section>
-
-  <section>
-    <h2>Languages</h2>
-    <p>English, Gujarati, and Hindi (fluent) · Mandarin (conversational)</p>
-  </section>
-</div>
-</body>
-</html>
